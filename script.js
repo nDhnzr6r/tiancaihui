@@ -168,20 +168,24 @@ saveBtn.addEventListener('click', async () => {
     g.fillText('称号授予书', left, 246);
     g.letterSpacing = '0px';
 
+    // 兹授予
+    g.textAlign = 'center';
+    g.fillStyle = '#4a4536';
+    g.font = `400 26px ${SERIF}`;
+    g.fillText('兹授予', W / 2, H * 0.395);
+
     // 名字
     const name = holder || '天才';
-    const size = fitText(g, name, innerW, 104);
+    const size = fitText(g, name, innerW, 124);
     g.font = `500 ${size}px ${SERIF}`;
     g.fillStyle = palette.ink;
-    g.textAlign = 'center';
-    g.fillText(name, W / 2, H * 0.46);
+    g.fillText(name, W / 2, H * 0.505);
 
     // 说明
-    g.textAlign = 'left';
-    g.fillStyle = '#3d392e';
-    g.font = `400 22px ${SERIF}`;
-    const lines = ['兹证明以上这位，自即日起在本会享有', '天才之称号，无需考核，无需续期。'];
-    lines.forEach((line, i) => g.fillText(line, left, H - 330 + i * 40));
+    g.fillStyle = '#4a4536';
+    g.font = `400 26px ${SERIF}`;
+    g.fillText('自即日起在本会享有天才之称号', W / 2, H * 0.60);
+    g.fillText('无需考核，无需续期', W / 2, H * 0.60 + 46);
 
     // 落款
     g.fillStyle = palette.quiet;
