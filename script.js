@@ -226,6 +226,6 @@ saveBtn.addEventListener('click', async () => {
     hint.textContent = '这一下没生成成功，再点一次试试。';
   } finally {
     saveBtn.disabled = false;
-    saveBtn.textContent = '保存图片';
+    saveBtn.textContent = '保存为 PNG';
   }
 });
