@@ -18,7 +18,7 @@ python -m http.server 8000
 
 整站是三个静态文件加一个 `assets` 目录，放到任意静态托管即可（GitHub Pages、Cloudflare Pages、Netlify 都可以）。仓库根目录就是站点根目录，不需要打包。
 
-GitHub Pages：Settings → Pages → Source 选 `Deploy from a branch`，分支选 `main`，目录选 `/ (root)`。
+GitHub Pages：Settings → Pages → Source 选 `Deploy from a branch`，分支选 `master`，目录选 `/ (root)`。
 
 ## 目录
 
