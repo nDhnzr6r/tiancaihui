@@ -190,6 +190,7 @@ saveBtn.addEventListener('click', async () => {
     // 落款
     g.fillStyle = palette.quiet;
     g.font = `400 19px ${SERIF}`;
+    g.textAlign = 'left';
     g.fillText(`编号 ${serial(name)}`, left, H - 180);
     g.textAlign = 'right';
     g.fillText(dateOut.textContent, W - left, H - 180);
